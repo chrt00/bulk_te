@@ -113,8 +113,8 @@ BulkTE.ContentScript= function(){
       timeouts.push(setTimeout(function(i){
         if(!error){
           var url = $(images[i]).attr('src');
-            //tineye(url, images[i]);
-        testTinEyeOffline(url, images[i]);
+            tineye(url, images[i]);
+            //testTinEyeOffline(url, images[i]);
         } else {
           clearTimeouts();
         }
