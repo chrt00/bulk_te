@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BulkTE</title>
+    <style>
+      body {
+        min-width: 200px;
+        overflow-x: hidden;
+		font-family: sans-serif;
+      }
+      label{
+	    font-size: 10px;
+	  }
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+	
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  BulkTE settings
+  <form>
+    <label>jQuery Selector</label>
+    <input id="selector" type="text" name="selector" placeholder="img.thumb">
+	<br/>
+	<label>Limit</label>
+	<br/>
+	<input id="limit" type="text" name="" placeholder="search limit">
+	<a href="#" id='tinit'>TinEye It</a>
+  </form>
+  </body>
+</html>
+
